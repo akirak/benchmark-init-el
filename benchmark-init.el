@@ -186,5 +186,10 @@ Slots:
   (ad-activate 'require)
   (ad-activate 'load))
 
+;; Activate benchmark-init by default. This allows measurement of autoloads
+;; loading time.
+
+;;;###autoload (require 'benchmark-init)
+
 (provide 'benchmark-init)
 ;;; benchmark-init.el ends here
